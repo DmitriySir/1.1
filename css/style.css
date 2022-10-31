@@ -1,0 +1,271 @@
+@font-face{
+    font-family: Ba;
+    src: url('../fonts/Barlow-Medium.otf');
+}
+
+@font-face{
+    font-family: BaR;
+    src: url('../fonts/Barlow-Regular.otf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100%;
+}
+
+main{
+    display: flex;
+}
+
+.main__background{
+    background: url(../img/bg.jpg) no-repeat;
+    width: 55%;
+    height: 1120px;
+    margin-right: 40px;
+}
+
+.main__background-logo{
+    background: url(../img/logo.svg) no-repeat;
+    z-index: 100;
+    height: 120px;
+    width: 50%;
+    background-size: 140px auto;
+    background-position: 15% 48%;
+}
+
+
+.main__section-bold{
+    
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Ba;
+    letter-spacing: -0.5px;
+    margin-top: 110px;
+}
+
+.main__section-regular{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: BaR;
+    letter-spacing: -0.2px;
+    opacity: 0.5;
+}
+
+.main__section-text__subtitle{
+    margin-top: 16px;
+}
+
+.main__section-button-box{
+    display: flex;
+}
+
+.main__section-button{
+    width: 240px;
+    height: 42px;
+    margin: 56px 25px 30px 0;
+    display: flex;
+}
+
+.main__section-button:hover{
+    opacity: 0.4;
+}
+
+.main__section-Fb{
+    background: #255A9B;
+}
+
+.main__section-Li{
+    background: #0076B6;
+}
+
+.main__section-button__FbImg{
+    background-image: url(../img/facebook.svg);
+    width: 15px;
+    height: 15px;
+    margin: auto 10px auto 10px;
+}
+
+.main__section-button__LiImg{
+    background-image: url(../img/linkedin.svg);
+    width: 15px;
+    height: 15px;
+    margin: auto 10px auto 10px;
+}
+
+.main__section-button-text{
+    font-family: BaR;
+    color: white;
+    margin: auto 0 auto 0;
+}
+
+.main__section-or__text{
+    color: #2A4A5C ;
+    margin: 23px 0 23px 23.5%;
+    font-size: 12px;
+}
+
+.main__section-or__text:before,
+.main__section-or__text:after
+{
+    background-color: black;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    vertical-align: middle;
+    width: 30%;
+    opacity: 0.3;
+}
+
+.main__section-input{
+   display: flex;
+   width: 100%;
+}
+
+.main__section-input__item{
+    border: solid #e6e6e6 1px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.main__section-input-form{
+    width: 100%;
+    height: 40px;
+}
+
+.main__section-text__heder{
+    font-family: BaR;
+    color: #2A4A5C ;
+    opacity: 0.5;
+}
+
+.main__section-input__item:hover{
+    border-left: 1px solid #3698FB;
+}
+
+input:focus {
+    outline: none;
+    border-radius:0;
+}
+
+.main__section-text__qustions{
+    margin-top: 50px;
+}
+
+.main__section-radio{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__section-text__radio{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Ba;
+    letter-spacing: -0.5px;
+}
+
+.main__section-radio-button{
+appearance: none;
+}
+
+.main__section-radio__custom{
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border: solid 2px #7B8A92;
+    border-radius: 50%;
+    margin-left: -2em;
+    opacity: 0.3;
+}
+
+.main__section-radio-button:checked + .main__section-radio__custom{
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border:solid 4px #3698FB;
+    border-radius: 50%;
+    opacity: 1;
+
+}
+
+
+label{
+    padding-left: 1.2em;
+}
+
+.main__section-radio-info{
+    color: #96a5b1;
+    border: solid #96a5b1 1px;
+    padding: 2.5px 5px;
+    border-radius: 50%;
+    font-size: 8px;
+    vertical-align: 50%;
+}
+
+.main__section-info{
+    margin: 40px 0 40px 0;
+    font-family: BaR;
+    width: 45%;
+    box-shadow: 1px 1px 10px 10px #eeeeee;
+    opacity: 0.5;
+    padding: 10px;
+}
+
+.main__section-checkbox{
+    font-family: BaR;
+    color:  #AFAFAF;
+}
+
+.main__section-submit{
+    margin-top: 50px;
+    background-color: #3f9fda;
+    width: 50%;
+    border-radius: 3%;
+}
+
+.main__section-submit__button{
+    background-color: #3f9fda;
+    height: 50px;
+    font-family: BaR;
+    font-size: 20px;
+    color: white;
+    border-radius: 7%;
+}
+
+.main__section-submit:hover{
+    opacity: 0.5;
+}
+
+label:hover{
+    opacity: 0.7;
+}
+
+
+@media(max-width: 425px){
+    .main__background{
+        display: none;
+    }
+    .main__section-button-box{
+        flex-direction: column;
+        margin: 0 0 20px 20px;
+    }
+    .main__section-radio{
+        flex-direction: column;
+        margin: 10px 0 10px 10px;
+    }
+    .main__section-info{
+        margin-left: 10px;
+    }
+    .main__section-submit{
+        margin: 50px;
+    }
+}
